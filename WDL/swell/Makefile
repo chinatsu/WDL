@@ -87,6 +87,10 @@ CFLAGS += -O2 -DNDEBUG
   endif
 endif
 
+ifdef RAND_COLOR_OVERLAY
+CFLAGS += -DRAND_COLOR_OVERLAY
+endif
+
 LINKEXTRA =  -lpthread -ldl 
 
 
