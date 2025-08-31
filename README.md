@@ -26,3 +26,13 @@ reaper
 
 i haven't been able to run reaper with my configuration (i've got some themes and stuff i guess).
 so i just made a bogus config folder `mkdir reaperblah` and started launching the program with `reaper -cfgfile reaperblah` :)
+
+
+## i applied the change and i regret everything
+
+just `sudo mv /usr/lib/REAPER/libSwell.so.bak /usr/lib/REAPER/libSwell.so`!
+
+alternatively, with the change, it is possible to launch reaper "as intended" 
+```
+env GDK_BACKEND=x11 reaper
+```
